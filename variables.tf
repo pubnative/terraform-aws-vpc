@@ -18,6 +18,11 @@ variable "assign_generated_ipv6_cidr_block" {
   default     = false
 }
 
+variable "assign_ipv6_address_on_creation" {
+  description = "True to assign ipv6 dynamically, this is the ipv6 equivalent of map_public_ip_on_launch"
+  default     = false
+}
+
 variable "secondary_cidr_blocks" {
   description = "List of secondary CIDR blocks to associate with the VPC to extend the IP Address pool"
   default     = []
